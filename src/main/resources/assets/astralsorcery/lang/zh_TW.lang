@@ -24,7 +24,7 @@ potion.as.crafted.name=星露
 
 misc.moreInformation=<按住 SHIFT 以查看詳細內容>
 misc.craftInformation=§7點擊查看合成
-
+misc.grindstone.double=雙倍輸出機率：%s
 misc.knowledge.missing=一個空白光亮的捲軸
 misc.knowledge.inscribed=包含了%s的知識
 misc.knowledge.inscribed.creative=包含了大量的知識
@@ -35,6 +35,7 @@ misc.link.start=已選擇%s！
 misc.link.link=在%s和%s建立連接！
 misc.link.link.block=此方塊
 misc.link.unlink=已將%s到%s的連接斷開！
+misc.link.unlink.all=斷開所有連接！
 
 misc.sword.sharpened=鋒利 (增加 %s 的傷害)
 misc.chaos.resistance=+%s 混沌抗性
@@ -42,6 +43,14 @@ misc.chaos.resistance.max=混沌免疫
 
 effect.as.cheatdeath=鳳凰之火
 effect.as.bleed=撕裂
+effect.as.dropmod=畫餅充飢
+
+amulet.enchantment.level.one=級別
+amulet.enchantment.level.more=等級
+
+amulet.enchantment.add_to_specific.name=+%s %s 到 %s
+amulet.enchantment.add_to_existing_specific.name=+%s %s 對現有 %s
+amulet.enchantment.add_to_existing_all.name=+%s %s 對現有的所有附魔
 
 enchantment.astralsorcery.enchantment.as.nightvision.desc=賦予佩戴者夜視效果。
 enchantment.astralsorcery.enchantment.as.smelting.desc=使用具有此附魔的工具開採的方塊將導致獲得的物品是燒製後的物品。（“自动冶炼”）
@@ -140,6 +149,7 @@ astralsorcery.journal.ROCK_CRYSTALS.1.text=幾乎每一個新開採的水晶石�
 
 research.CRYSTAL_GROWTH.name=水晶生長
 astralsorcery.journal.CRYSTAL_GROWTH.1.text=一旦水晶石浸沒在這種冰冷怪異的輕質液體中，其中一些液體將會暫時黏附在水晶石上。<NL>進一步觀察後，你發現星能液幾乎固化在表面了，但很快就再次熔化，那些臨時增加的質量也消失了。如果一個水晶變的更大，那就能用來做更多的物品。也許在液體中浸泡足够長的時間能永久增加它的大小？
+astralsorcery.journal.CRYSTAL_GROWTH.2.text=水晶似乎會增長到一個最大的規模。你想知道如果一個完全長大的水晶不斷浸沒在星能液中會發生什麼，以及它對純度的意義。
 
 research.MARBLETYPES.name=大理石
 astralsorcery.journal.MARBLETYPES.1.text=在地下挖礦時會發現一些原始且會反光的大理石。那些古代神殿也是用大理石建成的，它似乎能以一種獨特的方式反射並使用星輝中蘊含的能量。如果古代建築師確認大理石在星輝感應結构中的重要性，那麼它就是未來的基石。
@@ -154,8 +164,10 @@ astralsorcery.journal.ALTAR2.4.text=星輝祭壇與星輝合成台相比不僅�
 
 research.WELL.name=聚星缸
 astralsorcery.journal.WELL.1.text=在晚上，海藍寶石和水晶石表面凝結了一層奇怪的晶化液體。在仔細觀察後，你發現這種液體似乎是由星輝中的能量冷凝成的。<NL>一個精心雕琢的大理石盆將更容易收集這種液體。這種液體散發着明亮而純淨的光，看上去感覺非常冷，即使一整桶也幾乎感覺不到重量。
-
 astralsorcery.journal.WELL.3.text=只有將水晶石或海藍寶石放置在聚星缸頂部以將星輝濃縮成液體。用於收集星光的寶石與水晶將不斷碎裂，直到完全粉碎為止。一旦放置在聚星缸上，就只能用於收集星能液！<NL>這種星能液似乎和水晶石以及其他流體會產生特别的效果，不妨實驗一下。
+
+research.INFUSED_WOOD.name=Infused Wood
+astralsorcery.journal.INFUSED_WOOD.1.text=
 
 research.ILLUM_POWDER.name=輝光粉
 astralsorcery.journal.ILLUM_POWDER.1.text=螢光石和海藍寶石在靠近時會產生共振反應。它們之間會生成微小的不斷閃爍的火焰般的火花。這些火花能散播到離源頭很遠的距離。將海藍寶石打碎後與螢石粉混合就產生了一種有輻射能力的粉塵，它能照亮周圍的空間。這種粉末可以用來代替那些簡陋的火把。
@@ -343,9 +355,34 @@ astralsorcery.journal.BORE_CORE.2.text=一種能够承受將星能液中的能�
 astralsorcery.journal.BORE_CORE.4.text=由於所謂的“噴泉”是利用星能液運行的，因此不需要露天。然而由於其運作過程的精確性，它只接收噴泉方塊正上方聖杯內所裝的星能液。<NL>噴泉只是星輝的一種預處理方式，它所產生的能量與功能取決於噴泉與其下方所放置的基座方塊。
 
 research.BORE_HEAD_LIQUID.name=Neromantic基座
-astralsorcery.journal.BORE_HEAD_LIQUID.1.text=其中一種使用萬象泉的方法是利用當前釋放的大量能量来激法基岩下永世存在的液体资源。<NL>使用Neromantic基座將導致大量的液体积聚在中央的噴泉核心中。
+astralsorcery.journal.BORE_HEAD_LIQUID.1.text=其中一種使用萬象泉的方法是利用當前釋放的大量能量來激發基岩下永世存在的液體資源。<NL>使用Neromantic基座將導致大量的液体积聚在中央的噴泉核心中。
 astralsorcery.journal.BORE_HEAD_LIQUID.2.text=噴泉無法與其他機械設備進行互動，唯一的解決辦法就是利用聖杯的剩餘空間將噴泉產生的液體導出。<NL>然而這些地下的海洋並非無限的，一旦這些儲存的液體用完，無限的水將取而代之。<NL>短距離內的生成結果差異巨大，光是安置噴泉結构查看其結果既破費且令人厭煩。
 astralsorcery.journal.BORE_HEAD_LIQUID.4.text=回想起星輝共振器對大面積區域的信息收集能力，稍加調整可以讓其在共振器周圍的某个位置抽出一個小的液體樣板。並不實用，但收集的信息足够對附近是否適合放置萬象泉有一个大致的了解。<NL>共振器一共有兩種模式，在夜晚的效率更高些。手持共振器通過shift右鍵來切換模式。
+
+research.BORE_HEAD_VORTEX.name=Fysallidic基座
+astralsorcery.journal.BORE_HEAD_VORTEX.1.text=The basic principle behind manipulating the energies from a Fountain focuses on shaping the natural tendency of Starlight energy to gather to itself.<NL>While the Neromantic Prime shapes the energies into a vertical stream that draws sympathetic liquid essences from below bedrock, you believe you've found another use in encouraging localized vortical currents.
+astralsorcery.journal.BORE_HEAD_VORTEX.3.text=When turned back upon themselves and accelerated, these currents react with creatures in an odd fashion: drawing them up into the center of the vortex and "locking" them in place for as long as the vortex is powered by converted Liquid Starlight.<NL>While trapped in this Starlight vortex, the creatures seem largely unable to defend themselves, though the cost in Starlight to maintain this vortex is influenced by the strength of the creatures to fight back against its effects.
+astralsorcery.journal.BORE_HEAD_VORTEX.4.text=Even mythical creatures are capable of being held by this Prime, though it seems to require the full and focused power of this Prime to do so.<NL>Additionally, it seems that some creatures require more Starlight power than a Lightwell is able to consistently provide over a prolonged time, and so certain creatures may not be contained for long; only as long as the internal reservoir of the Fountain lasts.
+
+research.ENCHANTMENT_AMULET.name=Resplendent Prism
+astralsorcery.journal.ENCHANTMENT_AMULET.1.text=Experimentations with Starlight show that shifting stars seem to react in strange patterns, halting the shifting of their normally chaotic magical energies when exposed to filtered Starlight.<NL>With the emanating power no longer constantly in flux, a more focused benefit may be achieved.<NL>Directing these energies into an Eye of Ender causes them to softly radiate and diffuse outwards a short distance, rather than harshly piercing their surroundings.
+astralsorcery.journal.ENCHANTMENT_AMULET.3.text=While worn, such a prism adds or empowers magical effects applied to the rest of the wearer's equipment.<NL>The exact nature of this empowerment seems random and based entirely on the magical frequency to which the nether star was locked.<NL>Re-exposing this prism to more filtered Starlight seems to release the frequency lock, and select a new one, with the uncontrollable chaos of the shifting star itself determining the magical results.
+
+research.SEXTANT.name=Sextant
+astralsorcery.journal.SEXTANT.1.text=Due to the exacting nature of the structures required to manipulate Starlight energy flow, sometimes it can be maddening to constantly double-check the architecture of a structure when things aren't going right.<NL>By modifying a navigational sextant to be sympathetic to magical starlight energies, you end up with a tool that helps navigate the placement of structure blocks, even going as far as to indicate when materials have been misplaced.
+astralsorcery.journal.SEXTANT.3.text=Because of the energy signatures involved, the Sextant is also able to pick up on the resonations of the Ancients, guiding you to various structures they left behind.<NL>You cannot help but feel the faint draw of something unknown and far beyond your perception when holding this Sextant...
+
+research.SEXTANT_UPGRADE.name=Advanced Sextant
+astralsorcery.journal.SEXTANT_UPGRADE.1.text=Building on the resonant interactions with the energies of the Ancients, additional functionality of the Sextant could expand its value.<NL>By focusing in on the resonating energies of other civilizations and places, the Sextant can be used to guide you to other structures, or even specific convergences of the natural world.<NL>The draw is worryingly stronger now, if only you could find a path...
+
+research.OBSERVATORY.name=Observatory
+astralsorcery.journal.OBSERVATORY.1.text=While the Telescope has served well for finding the more difficult Faint Constellations, you feel something beckoning to you from even further beyond.<NL>Your experience with manipulation of Starlight leads you to believe you can construct a device that can let you search across the worlds themselves, though it will take considerable usage of filtered lenses and reactive powders to do so.
+astralsorcery.journal.OBSERVATORY.3.text=With a much broader field of view than the Telescope, the Observatory allows you to follow the path of Starlight back to its source, no matter the distance. From the depths of the Astral, you can see there are more Constellations shining forth, though their light is very Faint and almost indistinguishable from the background noise of existence at this range.
+astralsorcery.journal.OBSERVATORY.4.text=While it is unlikely the light finally filtering to you is sufficient to fuel a Ritual, you feel confident that it could be used to enchant items or potions. They may be too distant for crystal attunements, but there may be a way around that.
+
+research.ATT_TRAIT.name=Enhanced Crystal Attunement
+astralsorcery.journal.ATT_TRAIT.1.text=Your earlier suspicions concerning the Faint Constellations proved true, their light is too weak to fuel a ritual or even a full crystal Attunement. The spectrum of their light, however, leads you to believe that modification of existing Attunements may be possible.<NL>By ensuring the desired Faint Constellation is in the sky and setting the relays in the correct space, the Attunement Altar will react to their power.
+astralsorcery.journal.ATT_TRAIT.2.text=By placing an already Attuned crystal into the Attunement Altar, the Starlight of the Faint Constellation will alter the properties of the Attuned crystal, modifying the effects of rituals using that crystal.<NL>Additional information about the traits that can be applied have been added to the Faint Constellations in the Constellations tab.
 
 astralsorcery.journal.recipe.starlight=合成時需要星能
 astralsorcery.journal.recipe.nighttime=只能在夜間製作
@@ -367,7 +404,7 @@ crystal.size=大小
 crystal.purity=純度
 crystal.collectivity=切割
 crystal.attuned=調整到%s
-crystal.trait= %s的特征
+crystal.trait= %s的特徵
 crystal.collect.type=從%s收集星能
 
 entity.EntityStardust.name=星塵
@@ -381,7 +418,7 @@ entity.EntitySpectralTool.name=光譜調整器
 entity.EntityLiquidSpark.name=液態火花
 
 item.itemcraftingcomponent.aquamarine.name=海藍寶石
-item.itemcraftingcomponent.starmetal_ingot.name=星輝锭
+item.itemcraftingcomponent.starmetal_ingot.name=星輝錠
 item.itemcraftingcomponent.stardust.name=星塵
 item.itemcraftingcomponent.glass_lens.name=玻璃透鏡
 item.itemcraftingcomponent.reso_gem.name=共振寶石
